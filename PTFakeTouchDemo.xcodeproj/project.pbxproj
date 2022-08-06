@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C6AFC27A289E5A76007E7452 /* PTFakeTouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6AFC277289E460A007E7452 /* PTFakeTouch.framework */; };
 		DD7281E91FD2E12E0000ADCA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7281E81FD2E12E0000ADCA /* AppDelegate.m */; };
 		DD7281EC1FD2E12E0000ADCA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7281EB1FD2E12E0000ADCA /* ViewController.m */; };
 		DD7281EF1FD2E12E0000ADCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD7281ED1FD2E12E0000ADCA /* Main.storyboard */; };
@@ -14,20 +15,10 @@
 		DD7281F41FD2E12E0000ADCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD7281F21FD2E12E0000ADCA /* LaunchScreen.storyboard */; };
 		DD7281F71FD2E12E0000ADCA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7281F61FD2E12E0000ADCA /* main.m */; };
 		DD7282001FD2E3330000ADCA /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD7281FF1FD2E3330000ADCA /* IOKit.framework */; };
-		DD99173A2066A23F00F75161 /* PTFakeTouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD9917382066A22D00F75161 /* PTFakeTouch.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		DD9917372066A22D00F75161 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DD9917332066A22D00F75161 /* PTFakeTouch.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = DD62637420669B81009C683D;
-			remoteInfo = PTFakeTouch;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		C6AFC277289E460A007E7452 /* PTFakeTouch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PTFakeTouch.framework; path = "../../../../Library/Developer/Xcode/DerivedData/PTFakeTouchDemo-akvefpplhlkfueeniedmyobofwce/Build/Products/Debug-iphonesimulator/PTFakeTouch.framework"; sourceTree = "<group>"; };
 		DD7281E41FD2E12E0000ADCA /* PTFakeTouchDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PTFakeTouchDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD7281E71FD2E12E0000ADCA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DD7281E81FD2E12E0000ADCA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -39,7 +30,6 @@
 		DD7281F51FD2E12E0000ADCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD7281F61FD2E12E0000ADCA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DD7281FF1FD2E3330000ADCA /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IOKit.framework; sourceTree = "<group>"; };
-		DD9917332066A22D00F75161 /* PTFakeTouch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PTFakeTouch.xcodeproj; path = PTFakeTouch/PTFakeTouch.xcodeproj; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,8 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD99173A2066A23F00F75161 /* PTFakeTouch.framework in Frameworks */,
 				DD7282001FD2E3330000ADCA /* IOKit.framework in Frameworks */,
+				C6AFC27A289E5A76007E7452 /* PTFakeTouch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,8 +65,6 @@
 		DD7281E61FD2E12E0000ADCA /* PTFakeTouchDemo */ = {
 			isa = PBXGroup;
 			children = (
-				DD7281FF1FD2E3330000ADCA /* IOKit.framework */,
-				DD9917332066A22D00F75161 /* PTFakeTouch.xcodeproj */,
 				DD7281E71FD2E12E0000ADCA /* AppDelegate.h */,
 				DD7281E81FD2E12E0000ADCA /* AppDelegate.m */,
 				DD7281EA1FD2E12E0000ADCA /* ViewController.h */,
@@ -90,17 +78,11 @@
 			path = PTFakeTouchDemo;
 			sourceTree = "<group>";
 		};
-		DD9917342066A22D00F75161 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				DD9917382066A22D00F75161 /* PTFakeTouch.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		DD9917392066A23F00F75161 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C6AFC277289E460A007E7452 /* PTFakeTouch.framework */,
+				DD7281FF1FD2E3330000ADCA /* IOKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -136,7 +118,7 @@
 				TargetAttributes = {
 					DD7281E31FD2E12E0000ADCA = {
 						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -151,28 +133,12 @@
 			mainGroup = DD7281DB1FD2E12E0000ADCA;
 			productRefGroup = DD7281E51FD2E12E0000ADCA /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = DD9917342066A22D00F75161 /* Products */;
-					ProjectRef = DD9917332066A22D00F75161 /* PTFakeTouch.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				DD7281E31FD2E12E0000ADCA /* PTFakeTouchDemo */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		DD9917382066A22D00F75161 /* PTFakeTouch.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = PTFakeTouch.framework;
-			remoteRef = DD9917372066A22D00F75161 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		DD7281E21FD2E12E0000ADCA /* Resources */ = {
@@ -328,18 +294,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = LL8WB84C9S;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YT75U68YYB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/PTFakeTouchDemo",
 				);
 				INFOPLIST_FILE = PTFakeTouchDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.in8.PTFakeTouchDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.PTFakeTouchDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "d52f44cf-c7ee-4165-bef0-b382c2373e26";
-				PROVISIONING_PROFILE_SPECIFIER = "Wildcard Development";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -348,8 +315,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YT75U68YYB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/PTFakeTouchDemo",
