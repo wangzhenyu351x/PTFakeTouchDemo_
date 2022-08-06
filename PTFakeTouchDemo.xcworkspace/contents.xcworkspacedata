@@ -2,9 +2,15 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "container:PTFakeTouchDemo.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:PTFakeTouch/PTFakeTouch.xcodeproj">
    </FileRef>
    <FileRef
-      location = "container:PTFakeTouchDemo.xcodeproj">
+      location = "group:PTFakeTouchDemo.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>

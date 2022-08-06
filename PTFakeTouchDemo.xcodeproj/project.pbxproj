@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2998B35EEEE16928695DAFF1 /* libPods-PTFakeTouchDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BAA5428FD6A562D5E06A04BE /* libPods-PTFakeTouchDemoTests.a */; };
 		C6AFC27A289E5A76007E7452 /* PTFakeTouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6AFC277289E460A007E7452 /* PTFakeTouch.framework */; };
+		C6AFC29D289E7DB5007E7452 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6AFC29C289E7DB5007E7452 /* IOKit.framework */; };
+		C6AFC29E289E7DC6007E7452 /* PTFakeTouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6AFC277289E460A007E7452 /* PTFakeTouch.framework */; };
+		C6AFC2A0289E7E94007E7452 /* ViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = C6AFC29F289E7E94007E7452 /* ViewControllerSpec.m */; };
+		D9DC0B43AD473F509C4860DA /* Pods_PTFakeTouchDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 273B34F24E3542439BF80ADC /* Pods_PTFakeTouchDemo.framework */; };
 		DD7281E91FD2E12E0000ADCA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7281E81FD2E12E0000ADCA /* AppDelegate.m */; };
 		DD7281EC1FD2E12E0000ADCA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7281EB1FD2E12E0000ADCA /* ViewController.m */; };
 		DD7281EF1FD2E12E0000ADCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD7281ED1FD2E12E0000ADCA /* Main.storyboard */; };
@@ -17,8 +22,27 @@
 		DD7282001FD2E3330000ADCA /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD7281FF1FD2E3330000ADCA /* IOKit.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		C6AFC297289E7D5E007E7452 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD7281DC1FD2E12E0000ADCA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD7281E31FD2E12E0000ADCA;
+			remoteInfo = PTFakeTouchDemo;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		273B34F24E3542439BF80ADC /* Pods_PTFakeTouchDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PTFakeTouchDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CF932EB68568875FACDAFAC /* Pods-PTFakeTouchDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PTFakeTouchDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-PTFakeTouchDemoTests/Pods-PTFakeTouchDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A28FBB17221542218BCA558D /* Pods-PTFakeTouchDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PTFakeTouchDemo.debug.xcconfig"; path = "Target Support Files/Pods-PTFakeTouchDemo/Pods-PTFakeTouchDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		B656F99175CF71D62720F460 /* Pods-PTFakeTouchDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PTFakeTouchDemoTests.release.xcconfig"; path = "Target Support Files/Pods-PTFakeTouchDemoTests/Pods-PTFakeTouchDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		BAA5428FD6A562D5E06A04BE /* libPods-PTFakeTouchDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PTFakeTouchDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBBC2D39FB5659081412238C /* Pods-PTFakeTouchDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PTFakeTouchDemo.release.xcconfig"; path = "Target Support Files/Pods-PTFakeTouchDemo/Pods-PTFakeTouchDemo.release.xcconfig"; sourceTree = "<group>"; };
 		C6AFC277289E460A007E7452 /* PTFakeTouch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PTFakeTouch.framework; path = "../../../../Library/Developer/Xcode/DerivedData/PTFakeTouchDemo-akvefpplhlkfueeniedmyobofwce/Build/Products/Debug-iphonesimulator/PTFakeTouch.framework"; sourceTree = "<group>"; };
+		C6AFC293289E7D5E007E7452 /* PTFakeTouchDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PTFakeTouchDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6AFC29C289E7DB5007E7452 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = PTFakeTouch/PTFakeTouch/IOKit.framework; sourceTree = "<group>"; };
+		C6AFC29F289E7E94007E7452 /* ViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerSpec.m; sourceTree = "<group>"; };
 		DD7281E41FD2E12E0000ADCA /* PTFakeTouchDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PTFakeTouchDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD7281E71FD2E12E0000ADCA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DD7281E81FD2E12E0000ADCA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -33,24 +57,56 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C6AFC290289E7D5E007E7452 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6AFC29D289E7DB5007E7452 /* IOKit.framework in Frameworks */,
+				C6AFC29E289E7DC6007E7452 /* PTFakeTouch.framework in Frameworks */,
+				2998B35EEEE16928695DAFF1 /* libPods-PTFakeTouchDemoTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DD7281E11FD2E12E0000ADCA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				DD7282001FD2E3330000ADCA /* IOKit.framework in Frameworks */,
 				C6AFC27A289E5A76007E7452 /* PTFakeTouch.framework in Frameworks */,
+				D9DC0B43AD473F509C4860DA /* Pods_PTFakeTouchDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C6AFC294289E7D5E007E7452 /* PTFakeTouchDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				C6AFC29F289E7E94007E7452 /* ViewControllerSpec.m */,
+			);
+			path = PTFakeTouchDemoTests;
+			sourceTree = "<group>";
+		};
+		CAF88E797F871B299DE24417 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A28FBB17221542218BCA558D /* Pods-PTFakeTouchDemo.debug.xcconfig */,
+				BBBC2D39FB5659081412238C /* Pods-PTFakeTouchDemo.release.xcconfig */,
+				2CF932EB68568875FACDAFAC /* Pods-PTFakeTouchDemoTests.debug.xcconfig */,
+				B656F99175CF71D62720F460 /* Pods-PTFakeTouchDemoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DD7281DB1FD2E12E0000ADCA = {
 			isa = PBXGroup;
 			children = (
 				DD7281E61FD2E12E0000ADCA /* PTFakeTouchDemo */,
+				C6AFC294289E7D5E007E7452 /* PTFakeTouchDemoTests */,
 				DD7281E51FD2E12E0000ADCA /* Products */,
 				DD9917392066A23F00F75161 /* Frameworks */,
+				CAF88E797F871B299DE24417 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				DD7281E41FD2E12E0000ADCA /* PTFakeTouchDemo.app */,
+				C6AFC293289E7D5E007E7452 /* PTFakeTouchDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,8 +138,11 @@
 		DD9917392066A23F00F75161 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C6AFC29C289E7DB5007E7452 /* IOKit.framework */,
 				C6AFC277289E460A007E7452 /* PTFakeTouch.framework */,
 				DD7281FF1FD2E3330000ADCA /* IOKit.framework */,
+				273B34F24E3542439BF80ADC /* Pods_PTFakeTouchDemo.framework */,
+				BAA5428FD6A562D5E06A04BE /* libPods-PTFakeTouchDemoTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -90,10 +150,30 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		C6AFC292289E7D5E007E7452 /* PTFakeTouchDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6AFC29B289E7D5E007E7452 /* Build configuration list for PBXNativeTarget "PTFakeTouchDemoTests" */;
+			buildPhases = (
+				7EBCDB4AD1AEA65A33293B5F /* [CP] Check Pods Manifest.lock */,
+				C6AFC28F289E7D5E007E7452 /* Sources */,
+				C6AFC290289E7D5E007E7452 /* Frameworks */,
+				C6AFC291289E7D5E007E7452 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6AFC298289E7D5E007E7452 /* PBXTargetDependency */,
+			);
+			name = PTFakeTouchDemoTests;
+			productName = PTFakeTouchDemoTests;
+			productReference = C6AFC293289E7D5E007E7452 /* PTFakeTouchDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		DD7281E31FD2E12E0000ADCA /* PTFakeTouchDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD7281FA1FD2E12E0000ADCA /* Build configuration list for PBXNativeTarget "PTFakeTouchDemo" */;
 			buildPhases = (
+				8CBA0CA7C53144C9BF2B8E5E /* [CP] Check Pods Manifest.lock */,
 				DD7281E01FD2E12E0000ADCA /* Sources */,
 				DD7281E11FD2E12E0000ADCA /* Frameworks */,
 				DD7281E21FD2E12E0000ADCA /* Resources */,
@@ -116,6 +196,11 @@
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = In8;
 				TargetAttributes = {
+					C6AFC292289E7D5E007E7452 = {
+						CreatedOnToolsVersion = 13.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DD7281E31FD2E12E0000ADCA;
+					};
 					DD7281E31FD2E12E0000ADCA = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
@@ -136,11 +221,19 @@
 			projectRoot = "";
 			targets = (
 				DD7281E31FD2E12E0000ADCA /* PTFakeTouchDemo */,
+				C6AFC292289E7D5E007E7452 /* PTFakeTouchDemoTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		C6AFC291289E7D5E007E7452 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DD7281E21FD2E12E0000ADCA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -153,7 +246,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7EBCDB4AD1AEA65A33293B5F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PTFakeTouchDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CBA0CA7C53144C9BF2B8E5E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PTFakeTouchDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		C6AFC28F289E7D5E007E7452 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6AFC2A0289E7E94007E7452 /* ViewControllerSpec.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DD7281E01FD2E12E0000ADCA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -165,6 +313,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C6AFC298289E7D5E007E7452 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD7281E31FD2E12E0000ADCA /* PTFakeTouchDemo */;
+			targetProxy = C6AFC297289E7D5E007E7452 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DD7281ED1FD2E12E0000ADCA /* Main.storyboard */ = {
@@ -186,6 +342,67 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		C6AFC299289E7D5E007E7452 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CF932EB68568875FACDAFAC /* Pods-PTFakeTouchDemoTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YT75U68YYB;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PTFakeTouch/PTFakeTouch",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zy.PTFakeTouchDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PTFakeTouchDemo.app/PTFakeTouchDemo";
+			};
+			name = Debug;
+		};
+		C6AFC29A289E7D5E007E7452 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B656F99175CF71D62720F460 /* Pods-PTFakeTouchDemoTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YT75U68YYB;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PTFakeTouch/PTFakeTouch",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zy.PTFakeTouchDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PTFakeTouchDemo.app/PTFakeTouchDemo";
+			};
+			name = Release;
+		};
 		DD7281F81FD2E12E0000ADCA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -292,6 +509,7 @@
 		};
 		DD7281FB1FD2E12E0000ADCA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A28FBB17221542218BCA558D /* Pods-PTFakeTouchDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -313,6 +531,7 @@
 		};
 		DD7281FC1FD2E12E0000ADCA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBBC2D39FB5659081412238C /* Pods-PTFakeTouchDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -333,6 +552,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C6AFC29B289E7D5E007E7452 /* Build configuration list for PBXNativeTarget "PTFakeTouchDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6AFC299289E7D5E007E7452 /* Debug */,
+				C6AFC29A289E7D5E007E7452 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DD7281DF1FD2E12E0000ADCA /* Build configuration list for PBXProject "PTFakeTouchDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

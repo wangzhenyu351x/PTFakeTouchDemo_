@@ -24,7 +24,10 @@ typedef struct {
 } UITouchFlags;
 
 
-
+@interface UITouch ()
+- (void)setIsTap:(BOOL)isTap;
+- (void)_setIsTapToClick:(BOOL)arg1 NS_AVAILABLE_IOS(15_0) ;
+@end
 @implementation UITouch (KIFAdditions)
 
 - (id)initInView:(UIView *)view;
@@ -32,6 +35,14 @@ typedef struct {
     CGRect frame = view.frame;    
     CGPoint centerPoint = CGPointMake(frame.size.width * 0.5f, frame.size.height * 0.5f);
     return [self initAtPoint:centerPoint inView:view];
+}
+
+- (void)zy_setIsTap:(BOOL)isTap {
+    if (@available(iOS 15.0, *)) {
+        [self _setIsTapToClick:NO];
+    } else {
+        [self setIsTap:NO];
+    }
 }
 
 - (id)initAtPoint:(CGPoint)point inWindow:(UIWindow *)window;
@@ -53,7 +64,7 @@ typedef struct {
     [self setPhase:UITouchPhaseBegan];
     NSLog(@"initAtPoint setPhase 0");
     [self _setIsFirstTouchForView:YES];
-    [self setIsTap:NO];
+    [self zy_setIsTap:NO];
     [self setTimestamp:[[NSProcessInfo processInfo] systemUptime]];
     if ([self respondsToSelector:@selector(setGestureView:)]) {
         [self setGestureView:hitTestView];
@@ -83,7 +94,7 @@ typedef struct {
     [self setPhase:UITouchPhaseBegan];
     //NSLog(@"resetTouch setPhase 0");
     [self _setIsFirstTouchForView:YES];
-    [self setIsTap:NO];
+    [self zy_setIsTap:NO];
     [self setTimestamp:[[NSProcessInfo processInfo] systemUptime]];
     if ([self respondsToSelector:@selector(setGestureView:)]) {
         [self setGestureView:hitTestView];
@@ -115,7 +126,8 @@ typedef struct {
     [self setPhase:UITouchPhaseEnded];
     //NSLog(@"init...touch...setPhase 3");
     [self _setIsFirstTouchForView:YES];
-    [self setIsTap:NO];
+    [self zy_setIsTap:NO];
+
     [self setTimestamp:[[NSProcessInfo processInfo] systemUptime]];
     if ([self respondsToSelector:@selector(setGestureView:)]) {
         [self setGestureView:hitTestView];
