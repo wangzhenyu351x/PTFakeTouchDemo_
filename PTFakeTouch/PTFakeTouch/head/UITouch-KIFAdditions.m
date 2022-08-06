@@ -38,7 +38,7 @@ typedef struct {
 }
 
 - (void)zy_setIsTap:(BOOL)isTap {
-    if (@available(iOS 15.0, *)) {
+    if ([self respondsToSelector:@selector(_setIsTapToClick:)]) {
         [self _setIsTapToClick:NO];
     } else {
         [self setIsTap:NO];
