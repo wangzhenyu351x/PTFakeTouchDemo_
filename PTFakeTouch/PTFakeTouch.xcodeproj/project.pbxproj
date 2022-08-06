@@ -18,15 +18,12 @@
 		DD62639120669CA4009C683D /* PTFakeTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = DD62638F20669CA4009C683D /* PTFakeTouch.m */; };
 		DD62639420669E3D009C683D /* IOHIDEvent+KIF.h in Headers */ = {isa = PBXBuildFile; fileRef = DD62639220669E3D009C683D /* IOHIDEvent+KIF.h */; };
 		DD62639520669E3D009C683D /* IOHIDEvent+KIF.m in Sources */ = {isa = PBXBuildFile; fileRef = DD62639320669E3D009C683D /* IOHIDEvent+KIF.m */; };
-		DD62639820669E5C009C683D /* UIWindow-KIFAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DD62639620669E5C009C683D /* UIWindow-KIFAdditions.m */; };
-		DD62639920669E5C009C683D /* UIWindow-KIFAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = DD62639720669E5C009C683D /* UIWindow-KIFAdditions.h */; };
-		DD62639C20669E6C009C683D /* UIApplication-KIFAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DD62639A20669E6C009C683D /* UIApplication-KIFAdditions.m */; };
-		DD62639D20669E6C009C683D /* UIApplication-KIFAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = DD62639B20669E6C009C683D /* UIApplication-KIFAdditions.h */; };
 		DD99173C2066A2F200F75161 /* LoadableCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = DD99173B2066A2F200F75161 /* LoadableCategory.h */; };
 		DD99173E2066A43800F75161 /* FixCategoryBug.h in Headers */ = {isa = PBXBuildFile; fileRef = DD99173D2066A43700F75161 /* FixCategoryBug.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C6AFC2A1289EB86E007E7452 /* common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
 		DD62637420669B81009C683D /* PTFakeTouch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PTFakeTouch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD62637820669B81009C683D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD62637F20669BDC009C683D /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IOKit.framework; sourceTree = "<group>"; };
@@ -40,10 +37,6 @@
 		DD62638F20669CA4009C683D /* PTFakeTouch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTFakeTouch.m; sourceTree = "<group>"; };
 		DD62639220669E3D009C683D /* IOHIDEvent+KIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IOHIDEvent+KIF.h"; sourceTree = "<group>"; };
 		DD62639320669E3D009C683D /* IOHIDEvent+KIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IOHIDEvent+KIF.m"; sourceTree = "<group>"; };
-		DD62639620669E5C009C683D /* UIWindow-KIFAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow-KIFAdditions.m"; sourceTree = "<group>"; };
-		DD62639720669E5C009C683D /* UIWindow-KIFAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow-KIFAdditions.h"; sourceTree = "<group>"; };
-		DD62639A20669E6C009C683D /* UIApplication-KIFAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication-KIFAdditions.m"; sourceTree = "<group>"; };
-		DD62639B20669E6C009C683D /* UIApplication-KIFAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication-KIFAdditions.h"; sourceTree = "<group>"; };
 		DD99173B2066A2F200F75161 /* LoadableCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadableCategory.h; sourceTree = "<group>"; };
 		DD99173D2066A43700F75161 /* FixCategoryBug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FixCategoryBug.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,10 +86,6 @@
 			children = (
 				DD99173D2066A43700F75161 /* FixCategoryBug.h */,
 				DD99173B2066A2F200F75161 /* LoadableCategory.h */,
-				DD62639B20669E6C009C683D /* UIApplication-KIFAdditions.h */,
-				DD62639A20669E6C009C683D /* UIApplication-KIFAdditions.m */,
-				DD62639720669E5C009C683D /* UIWindow-KIFAdditions.h */,
-				DD62639620669E5C009C683D /* UIWindow-KIFAdditions.m */,
 				DD62639220669E3D009C683D /* IOHIDEvent+KIF.h */,
 				DD62639320669E3D009C683D /* IOHIDEvent+KIF.m */,
 				DD62638520669C71009C683D /* UIEvent+KIFAdditions.h */,
@@ -105,6 +94,7 @@
 				DD62638220669C71009C683D /* UITouch-KIFAdditions.m */,
 				DD62638720669C71009C683D /* UIView-KIFAdditions.h */,
 				DD62638320669C71009C683D /* UIView-KIFAdditions.m */,
+				C6AFC2A1289EB86E007E7452 /* common.h */,
 			);
 			path = head;
 			sourceTree = "<group>";
@@ -120,8 +110,6 @@
 				DD62639020669CA4009C683D /* PTFakeTouch.h in Headers */,
 				DD62638A20669C71009C683D /* UITouch-KIFAdditions.h in Headers */,
 				DD99173C2066A2F200F75161 /* LoadableCategory.h in Headers */,
-				DD62639920669E5C009C683D /* UIWindow-KIFAdditions.h in Headers */,
-				DD62639D20669E6C009C683D /* UIApplication-KIFAdditions.h in Headers */,
 				DD62638D20669C71009C683D /* UIView-KIFAdditions.h in Headers */,
 				DD62638B20669C71009C683D /* UIEvent+KIFAdditions.h in Headers */,
 				DD62639420669E3D009C683D /* IOHIDEvent+KIF.h in Headers */,
@@ -199,9 +187,7 @@
 				DD62638C20669C71009C683D /* UIEvent+KIFAdditions.m in Sources */,
 				DD62638820669C71009C683D /* UITouch-KIFAdditions.m in Sources */,
 				DD62639120669CA4009C683D /* PTFakeTouch.m in Sources */,
-				DD62639C20669E6C009C683D /* UIApplication-KIFAdditions.m in Sources */,
 				DD62638920669C71009C683D /* UIView-KIFAdditions.m in Sources */,
-				DD62639820669E5C009C683D /* UIWindow-KIFAdditions.m in Sources */,
 				DD62639520669E3D009C683D /* IOHIDEvent+KIF.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

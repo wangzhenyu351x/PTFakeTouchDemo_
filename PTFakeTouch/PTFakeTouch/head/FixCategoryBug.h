@@ -22,7 +22,7 @@
 #define KW_FIX_CATEGORY_BUG_M(name) \
 @implementation KW_FIX_CATEGORY_BUG_##name \
 + (void)print { \
-NSLog(@"[Enable]"); \
+NSLog(@"[Enablehahah]"); \
 } \
 @end \
 

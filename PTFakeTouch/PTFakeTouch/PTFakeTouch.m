@@ -8,7 +8,8 @@
 
 #import "PTFakeTouch.h"
 #import "UITouch-KIFAdditions.h"
-#import "UIApplication-KIFAdditions.h"
+//#import "UIApplication-KIFAdditions.h"
+#import "common.h"
 #import "UIEvent+KIFAdditions.h"
 static NSMutableArray *touchAry;
 @implementation PTFakeTouch
@@ -16,7 +17,7 @@ static NSMutableArray *touchAry;
     KW_ENABLE_CATEGORY(UITouch_KIFAdditions);
     KW_ENABLE_CATEGORY(UIEvent_KIFAdditions);
     touchAry = [[NSMutableArray alloc] init];
-    for (NSInteger i = 0; i<100; i++) {
+    for (NSInteger i = 0; i<10; i++) {
         UITouch *touch = [[UITouch alloc] initTouch];
         [touch setPhaseAndUpdateTimestamp:UITouchPhaseEnded];
         [touchAry addObject:touch];
@@ -83,13 +84,16 @@ static NSMutableArray *touchAry;
 + (NSInteger)getAvailablePointId{
     NSInteger availablePointId=0;
     NSMutableArray *availableIds = [[NSMutableArray alloc]init];
-    for (NSInteger i=0; i<touchAry.count-50; i++) {
+    for (NSInteger i=0; i<touchAry.count; i++) {
         UITouch *touch = [touchAry objectAtIndex:i];
-        if (touch.phase==UITouchPhaseEnded||touch.phase==UITouchPhaseStationary) {
-            [availableIds addObject:@(i+1)];
+        if (touch.phase==UITouchPhaseEnded) {
+//            [availableIds addObject:@(i+1)];
+            availablePointId = i+1;
+            break;
         }
     }
-    availablePointId = availableIds.count==0 ? 0 : [[availableIds objectAtIndex:(arc4random() % availableIds.count)] integerValue];
+//    availablePointId = availableIds.count==0 ? 0 : [[availableIds objectAtIndex:(arc4random() % availableIds.count)] integerValue];
+    NSLog(@"availableID :%d",availablePointId);
     return availablePointId;
 }
 @end

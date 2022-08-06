@@ -33,7 +33,7 @@
 
 }
 
-- (void)test {
+void test() {
     [PTFakeTouch fakeTouchId:[PTFakeTouch getAvailablePointId] AtPoint:CGPointMake(10,200) withTouchPhase:UITouchPhaseBegan];
 }
 
